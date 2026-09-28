@@ -1,3 +1,4 @@
+"use strict";
 // Husk fra dag 1: skriv "use strict" herunder
 
 
@@ -7,6 +8,12 @@ const getWordElem = document.getElementById("word");
 // Eksempel: vi lytter efter klik på selve teksten (bemærk: der er ingen knap i denne opgave)
 // og kører en anonym function - ligesom i de tidligere opgaver
 getWordElem.addEventListener("click", function() {
+
+     if (this.textContent === `Det ta'r kun 5 minutter`){
+        this.innerHTML = `<strong>og så er du i Netto.</strong>`;
+    } else {
+        this.innerHTML = `<strong>Det ta'r kun 5 minutter</strong>`;
+    }
 
     // Skriv if/else-strukturen selv herinde, ligesom i de tidligere opgaver.
     //
